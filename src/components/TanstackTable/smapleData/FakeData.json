@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "age": 25,
+        "city": "New York",
+        "active": true
+    },
+    {
+        "id": 2,
+        "name": "Bob",
+        "age": 30,
+        "city": "Los Angeles",
+        "active": false
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "age": 28,
+        "city": "Chicago",
+        "active": true
+    },
+    {
+        "id": 4,
+        "name": "David",
+        "age": 35,
+        "city": "Houston",
+        "active": true
+    },
+    {
+        "id": 5,
+        "name": "Emma",
+        "age": 22,
+        "city": "Seattle",
+        "active": false
+    },
+    {
+        "id": 6,
+        "name": "Frank",
+        "age": 40,
+        "city": "Boston",
+        "active": true
+    },
+    {
+        "id": 7,
+        "name": "Grace",
+        "age": 27,
+        "city": "Denver",
+        "active": true
+    },
+    {
+        "id": 8,
+        "name": "Henry",
+        "age": 33,
+        "city": "Miami",
+        "active": false
+    },
+    {
+        "id": 9,
+        "name": "Isabella",
+        "age": 29,
+        "city": "Portland",
+        "active": true
+    },
+    {
+        "id": 10,
+        "name": "James",
+        "age": 31,
+        "city": "Austin",
+        "active": true
+    }
+]
