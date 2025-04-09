@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = ({ cartCount }) => {
   return (
@@ -9,21 +9,46 @@ const Header = ({ cartCount }) => {
           AIStoreWithDeepSeek
         </Link>
         <div className="flex items-center space-x-4">
-          <Link
+          <NavLink
+            to="/static-tanstack-table"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700 hover:text-blue-600"
+            }
+          >
+            Static Tanstack
+          </NavLink>
+          <NavLink
             to="/dynamic-tanstack-table"
-            className="text-gray-700 hover:text-blue-600"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700 hover:text-blue-600"
+            }
           >
             Dynamic Tanstack
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/tanstack-table"
-            className="text-gray-700 hover:text-blue-600"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700 hover:text-blue-600"
+            }
           >
             Tanstack
-          </Link>
-          <Link to="/cart" className="text-gray-700 hover:text-blue-600">
+          </NavLink>
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700 hover:text-blue-600"
+            }
+          >
             Cart ({cartCount})
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -6,6 +6,7 @@ import ProductDetail from "./components/ProductDetail/ProductDetail";
 import Cart from "./components/Cart/Cart";
 import TanstackTable from "./components/TanstackTable/tanstackTable";
 import DynamicTanstack from "./components/TanstackTable/dynamicTanstack";
+import StaticTanstackTable from "./components/TanstackTable/staticTable";
 
 function App() {
   const [cart, setCart] = useState([]); // Cart state
@@ -39,6 +40,10 @@ function App() {
       <Header cartCount={cart.length} />
       <Routes>
         <Route path="/" element={<ProductList />} />
+        <Route
+          path="/static-tanstack-table"
+          element={<StaticTanstackTable />}
+        />
         <Route path="/dynamic-tanstack-table" element={<DynamicTanstack />} />
 
         <Route path="/tanstack-table" element={<TanstackTable />} />

@@ -12,8 +12,18 @@ const dynamicTanstack = () => {
         data={UserData}
         defaultPageSize={5}
         pageSizeOptions={[5, 10]}
-        showSearch={false}
+        showSearch={true}
         specialSortColumns={["name", "city"]}
+        showColumn={true}
+        refreshButton={true}
+        statusFilter={true}
+        statusValue={[
+          "draft",
+          "submitted",
+          "changes_requested",
+          "completed",
+          "cancelled",
+        ]}
       />
     </div>
   );
